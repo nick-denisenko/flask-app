@@ -9,5 +9,6 @@ jobs:
         with:
           python-version: '3.8'
       - run: |
+          pip install pipenv
           pipenv install --dev
           pipenv run pytest test_app.py
